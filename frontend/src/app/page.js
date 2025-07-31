@@ -22,7 +22,7 @@ export default function Home() {
 
     setLoading(true);
     try {
-      const res = await axios.post("https://receipe-generator-h4bz.vercel.app/api/recipe/generate", {
+      const res = await axios.post("https://receipe-generator-giyo.vercel.app/api/recipe/generate", {
         ingredients: ingredientList,
       });
 
