@@ -19,7 +19,7 @@ app.use(cors({
 
 
 app.use("/api/auth",authrouter);
-app.use("/api/recpie",recepierouter);
+app.use("/api/recipe", recepierouter);
 
 mongoose.connect(process.env.MONOGO_URL)
   .then(() => {
