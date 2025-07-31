@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://receipe-generator-rcyz.vercel.app/',
   methods: ['GET', 'POST'],    
   credentials: true       
 }));
