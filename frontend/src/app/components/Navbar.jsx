@@ -56,7 +56,7 @@ export default function Navbar() {
           <Link href="/" className="block text-gray-700 hover:text-blue-600 transition">Home</Link>
           <Link href="/about" className="block text-gray-700 hover:text-blue-600 transition">About</Link>
           <Link href="/contact" className="block text-gray-700 hover:text-blue-600 transition">Contact</Link>
-          <Link href="/recipe" className="block text-gray-700 hover:text-blue-600 transition">Recipes</Link>
+          <Link href="/receipe" className="block text-gray-700 hover:text-blue-600 transition">Recipes</Link>
           {isLoggedIn ? (
             <button onClick={handleLogout} className="block w-full text-left text-white bg-red-600 px-3 py-1 rounded hover:bg-red-700 transition">Logout</button>
           ) : (
