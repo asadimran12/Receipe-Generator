@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ Proper CORS config — adjust only origin
 const corsOptions = {
-  origin: 'https://receipe-generator-g9wk.vercel.app',
+  origin: 'https://receipe-generator-g9wk.vercel.app/',
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true
 };
