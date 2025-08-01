@@ -12,7 +12,7 @@ const app = express();
 
 // ✅ CORS config — allow only your frontend
 const corsOptions = {
-  origin: "https://receipe-generator-g9wk.vercel.app/", // ✅ No trailing slash
+  origin: "https://receipe-generator-g9wk.vercel.app", // ✅ No trailing slash
   methods: ["GET", "POST", "OPTIONS"],
   credentials: true,
 };
