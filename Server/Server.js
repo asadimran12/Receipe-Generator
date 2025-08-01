@@ -8,14 +8,14 @@ const authrouter=require("./Router/authrouter");
 const recepierouter=require("./Router/Receiperouter")
 
 const app = express();
-app.use(cors());
-app.use(express.json());
+const corsOptions = {
+  origin: 'https://receipe-generator-g9wk.vercel.app', 
+  methods: ['GET', 'POST'],
+  credentials: true
+};
 
-app.use(cors({
-  origin: 'https://receipe-generator-g9wk.vercel.app/',
-  methods: ['GET', 'POST'],    
-  credentials: true       
-}));
+app.use(cors(corsOptions));
+app.use(express.json());
 
 
 app.use("/api/auth",authrouter);
